@@ -40,7 +40,8 @@ class HomeScreen extends StatelessWidget {
                         height: 150,  
                         width: 250,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
+                
+                          borderRadius: BorderRadius.circular(1000),
                             image: DecorationImage(
                                 image: NetworkImage(
                                     "https://image.freepik.com/free-photo/islamic-3d-render-arabic-theme-background-with-alquran-moon-arabic-lamp_462569-98.jpg",))),
@@ -95,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(
                         height: 8,
                       ),
-                      Text("alquran")
+                      Text("babi")
                     ],
                   ),
                 ],
