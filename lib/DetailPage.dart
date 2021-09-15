@@ -8,12 +8,8 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("contoh 1"),
-      ),
-      body: Center(
-        child: Text('contoh 2'),
-      ),   
+      appBar: AppBar(title: Text("detail page"),),
+     
     );
   }
 }

@@ -35,14 +35,9 @@ class MyHomePage extends StatelessWidget {
       itemBuilder: (_,index){
         return ListTile(
           title:  Text('Al-fatihah' ,style: TextStyle( fontSize: 17 , fontWeight: FontWeight.w600,),),
-          subtitle: Text(" 'pembukaan' 7 ayat", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400 ,color: Colors.black) ,),
-           leading: Text("1.", style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),),
-           onTap: () {
-            //  Navigator.push(
-              //  context,
-              //  MaterialPageRoute(builder: (context) => Detailpage(index),),
-            //  );
-           },
+          subtitle: Text(" 'pembukaan' 7 ayat", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400 ,color: Colors.black),),
+           leading: Text("1.", style: TextStyle(fontSize: 35 , fontWeight: FontWeight.w400),),
+            
         );
       },
       );
