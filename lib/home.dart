@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:intl/intl.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -11,25 +12,40 @@ class Home extends StatelessWidget {
           Stack(
             children: [
               Container(
+                margin: EdgeInsets.fromLTRB(56, 20, 0, 10),
+                child: Text(
+                  DateFormat.yMMMMd().format(DateTime.now()),
+                  style: TextStyle(fontSize: 24),
+                ),
+              ),
+              Container(
                 height: 250,
-                margin: EdgeInsets.fromLTRB(50, 30, 50, 30),
+                margin: EdgeInsets.fromLTRB(50, 80, 50, 30),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/bg.jpg'), fit: BoxFit.fill),
+                        image: AssetImage('assets/camel.jpg'),
+                        fit: BoxFit.fill),
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(40)),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(140, 110, 0, 0),
+                margin: EdgeInsets.fromLTRB(175, 160, 0, 0),
                 child: Text(
-                  "Ahlan Wa Sahlan",
-                  style: TextStyle(fontSize: 40, color: Colors.white),
+                  DateFormat.EEEE().format(DateTime.now()),
+                  style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
+              Container(
+                margin: EdgeInsets.fromLTRB(475, 280, 0, 0),
+                child: Text(
+                  DateFormat.Hm().format(DateTime.now()),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              )
             ],
-          ),
-          SizedBox(
-            height: 15,
           ),
           Text(
             "Mau baca apa?",
@@ -136,7 +152,7 @@ class Home extends StatelessWidget {
                             height: 90,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage('assets/sun.png'),
+                                image: AssetImage('assets/matahari.png'),
                               ),
                             ),
                           ),
