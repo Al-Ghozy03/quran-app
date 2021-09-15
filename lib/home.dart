@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -30,162 +29,165 @@ class Home extends StatelessWidget {
             ],
           ),
           SizedBox(
+            height: 15,
+          ),
+          Text(
+            "Mau baca apa?",
+            style: TextStyle(fontSize: 30),
+          ),
+          SizedBox(
             height: 25,
           ),
-          Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(20),
-                    height: 200,
-                    width: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 70,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/quran.png'),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 40),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      height: 234,
+                      width: 234,
+                      decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/quran.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "Al Quran",
-                          style: TextStyle(
-                            fontSize: 30,
+                          Text(
+                            "Al Quran",
+                            style: TextStyle(
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          "Sesuai Kemenag",
-                          style: TextStyle(
-                            fontSize: 15,
+                          Text(
+                            "Sesuai Kemenag",
+                            style: TextStyle(
+                              fontSize: 15,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 40),
-                    padding: EdgeInsets.all(20),
-                    height: 200,
-                    width: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 70,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/quran.png'),
+                    Container(
+                      margin: EdgeInsets.only(left: 40),
+                      padding: EdgeInsets.all(20),
+                      height: 234,
+                      width: 234,
+                      decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/muhammad.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "Al Quran",
-                          style: TextStyle(
-                            fontSize: 30,
+                          Text(
+                            "Hadist",
+                            style: TextStyle(
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          "Sesuai Kemenag",
-                          style: TextStyle(
-                            fontSize: 15,
+                          Text(
+                            "Dari imam-imam pilihan",
+                            style: TextStyle(
+                              fontSize: 15,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(20),
-                    height: 200,
-                    width: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 70,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/quran.png'),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      height: 234,
+                      width: 234,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/sun.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "Al Quran",
-                          style: TextStyle(
-                            fontSize: 30,
+                          Text(
+                            "Dzikir Pagi",
+                            style: TextStyle(fontSize: 30, color: Colors.white),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          "Sesuai Kemenag",
-                          style: TextStyle(
-                            fontSize: 15,
+                          Text(
+                            "Sesuai sunnah",
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 40),
-                    padding: EdgeInsets.all(20),
-                    height: 200,
-                    width: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 70,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/quran.png'),
+                    Container(
+                      margin: EdgeInsets.only(left: 40),
+                      padding: EdgeInsets.all(20),
+                      height: 234,
+                      width: 234,
+                      decoration: BoxDecoration(
+                          color: Colors.grey[800],
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/moonlight.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "Al Quran",
-                          style: TextStyle(
-                            fontSize: 30,
+                          Text(
+                            "Dzikir petang",
+                            style: TextStyle(fontSize: 30, color: Colors.white),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Text(
-                          "Sesuai Kemenag",
-                          style: TextStyle(
-                            fontSize: 15,
+                          Text(
+                            "Sesuai sunnah",
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ],
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            ),
           )
         ],
       ),
