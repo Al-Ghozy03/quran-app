@@ -9,10 +9,9 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "poppins"),
-      debugShowCheckedModeBanner: false,
-      title: "Quran_App",
-      home: Home()
-    );
+        theme: ThemeData(fontFamily: "poppins"),
+        debugShowCheckedModeBanner: false,
+        title: "Quran_App",
+        home: Home());
   }
 }
