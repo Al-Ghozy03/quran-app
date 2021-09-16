@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/home.dart';
+import 'package:quran_app/listNew.dart';
 import 'package:quran_app/listquran.dart';
 import 'package:quran_app/DetailPage.dart';
 
@@ -13,7 +14,7 @@ class MyHomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Quran_App",
       home: Scaffold(
-        body: Home(),
+        body: ListNew(),
       ),
     );
   }
