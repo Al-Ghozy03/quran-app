@@ -12,9 +12,7 @@ class MyHomePage extends StatelessWidget {
       theme: ThemeData(fontFamily: "poppins"),
       debugShowCheckedModeBanner: false,
       title: "Quran_App",
-      home: Scaffold(
-        body: Home(),
-      ),
+      home: Home()
     );
   }
 }
