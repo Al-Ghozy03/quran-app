@@ -33,3 +33,19 @@ class Listquran extends StatelessWidget {
     );
   }
 }
+
+Widget listquran(
+    int no, String namaSurat, String keterangan, int ayat, String arab) {
+  return ListTile(
+    leading: Text(no.toString()),
+    title: Text(namaSurat),
+    subtitle: Text(keterangan),
+    trailing: Text(arab),
+  );
+}
+
+
+
+// title: Text('Al-Fatihah', style: TextStyle(fontSize: 20, ),),
+//            leading: Text("1.", style: TextStyle(fontSize: 20),),         
+//            subtitle: Text("pembukaan , 7 Ayat "), 

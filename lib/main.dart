@@ -11,7 +11,7 @@ class MyHomePage extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(fontFamily: "poppins"),
         debugShowCheckedModeBanner: false,
-        title: "Quran_App",
-        home: Home());
+        title: "Quran App",
+        home: Listquran());
   }
 }
