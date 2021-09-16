@@ -11,7 +11,7 @@ class Listquran extends StatelessWidget {
           child: SingleChildScrollView(),
         ),
         Container(
-          height: 200,
+          height: 1000,
           child: ListView.builder(
             itemCount: dataAlQuran.length,
             itemBuilder: (context, index) {
