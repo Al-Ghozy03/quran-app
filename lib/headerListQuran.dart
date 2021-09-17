@@ -7,95 +7,102 @@ class HeaderQuran extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Center(
-              child: Stack(
-                children: [
-                  Container(
-                    height: 250,
-                    margin: EdgeInsets.fromLTRB(50, 50, 50, 30),
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assets/alam.jpg'),
-                            fit: BoxFit.fill),
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(40)),
-                  ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(0, 140, 0, 0),
-                    child: Center(
-                      child: Text(
-                        "Daftar Surat",
-                        style: TextStyle(
-                            fontSize: 40,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Center(
+                child: Stack(
+                  children: [
+                    Container(
+                      height: 250,
+                      margin: EdgeInsets.fromLTRB(50, 50, 50, 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage('assets/alam.jpg'),
+                              fit: BoxFit.fill),
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(40)),
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(0, 140, 0, 0),
+                      child: Center(
+                        child: Text(
+                          "Daftar Surat",
+                          style: TextStyle(
+                              fontSize: 40,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            ListView.builder(
-              itemCount: dataAlQuran.length,
-              itemBuilder: (context, index) {
-                final AlQuran place = dataAlQuran[index];
-                return InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return DetailQuran();
-                    }));
+              Container(
+                height: 800,
+                child: ListView.builder(
+                  itemCount: 192,
+                  itemBuilder: (context, index) {
+                    final AlQuran quran = dataAlQuran[index];
+                    return InkWell(
+                      child: Card(
+                        child: Container(
+                          height: 90,
+                          child: Row(
+                            children: [
+                              Container(
+                                  margin: EdgeInsets.fromLTRB(30, 0, 40, 0),
+                                  child: Text(quran.id.toString())),
+                              Container(
+                                margin: EdgeInsets.only(top: 19),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      quran.surat_name,
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          quran.surat_terjemahan,
+                                          style: TextStyle(
+                                              color: Colors.grey[700]),
+                                        ),
+                                        Text(
+                                          ",",
+                                          style: TextStyle(
+                                              color: Colors.grey[700]),
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        Text(quran.count_ayat.toString(),
+                                            style: TextStyle(
+                                                color: Colors.grey[700])),
+                                        SizedBox(
+                                          width: 6,
+                                        ),
+                                        Text("ayat",
+                                            style: TextStyle(
+                                                color: Colors.grey[700]))
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
                   },
-                  child: Container(
-                    height: 100,
-                    child: Row(
-                      children: [
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                        Text("data"),
-                      ],
-                    ),
-                  ),
-                );
-              },
-            )
-          ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

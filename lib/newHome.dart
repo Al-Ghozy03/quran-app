@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:quran_app/halaman.dart';
+import 'package:quran_app/headerListQuran.dart';
 
 class NewHome extends StatelessWidget {
   @override
@@ -63,7 +64,7 @@ class NewHome extends StatelessWidget {
               InkWell(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return Halaman();
+                    return HeaderQuran();
                   }));
                 },
                 child: Container(

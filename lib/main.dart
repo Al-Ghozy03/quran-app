@@ -14,7 +14,7 @@ class MyHomePage extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "Quran App",
         home: Scaffold(
-          body: HeaderQuran(),
+          body: NewHome(),
         ));
   }
 }
