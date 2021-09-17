@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quran_app/detailQuran.dart';
+import 'package:quran_app/page/detailQuran.dart';
 import 'package:quran_app/model/alquran.dart';
 
 class HeaderQuran extends StatelessWidget {
@@ -14,8 +14,17 @@ class HeaderQuran extends StatelessWidget {
                 child: Stack(
                   children: [
                     Container(
+                      padding: EdgeInsets.fromLTRB(40, 15, 0, 0),
+                      child: IconButton(
+                        icon: Icon(Icons.arrow_back),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ),
+                    Container(
                       height: 250,
-                      margin: EdgeInsets.fromLTRB(50, 50, 50, 30),
+                      margin: EdgeInsets.fromLTRB(50, 70, 50, 30),
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('assets/alam.jpg'),
@@ -24,7 +33,7 @@ class HeaderQuran extends StatelessWidget {
                           borderRadius: BorderRadius.circular(40)),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 140, 0, 0),
+                      margin: EdgeInsets.fromLTRB(0, 160, 0, 0),
                       child: Center(
                         child: Text(
                           "Daftar Surat",
@@ -45,6 +54,12 @@ class HeaderQuran extends StatelessWidget {
                   itemBuilder: (context, index) {
                     final AlQuran quran = dataAlQuran[index];
                     return InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return DetailQuran(quran: quran);
+                        }));
+                      },
                       child: Card(
                         child: Container(
                           height: 90,

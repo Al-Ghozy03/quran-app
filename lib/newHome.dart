@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:quran_app/halaman.dart';
-import 'package:quran_app/headerListQuran.dart';
+import 'package:quran_app/page/listQuran.dart';
+import 'package:quran_app/page/listHadist.dart';
+import 'package:quran_app/page/listZikirPagi.dart';
+import 'package:quran_app/page/listZikirPetang.dart';
 
 class NewHome extends StatelessWidget {
   @override
@@ -102,38 +105,45 @@ class NewHome extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(20),
-                height: 234,
-                width: 234,
-                decoration: BoxDecoration(
-                    color: Colors.grey[400],
-                    borderRadius: BorderRadius.circular(30)),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 90,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/muhammad.png'),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ListHadist();
+                  }));
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  height: 234,
+                  width: 234,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(30)),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 90,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/muhammad.png'),
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      "Hadist",
-                      style: TextStyle(
-                        fontSize: 30,
+                      Text(
+                        "Hadist",
+                        style: TextStyle(
+                          fontSize: 30,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      "Dari imam terkenal",
-                      style: TextStyle(
-                        fontSize: 15,
+                      Text(
+                        "Dari imam terkenal",
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -144,64 +154,78 @@ class NewHome extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                height: 234,
-                width: 234,
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(30)),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 90,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/matahari.png'),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ListZikirPagi();
+                  }));
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  height: 234,
+                  width: 234,
+                  decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(30)),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 90,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/matahari.png'),
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      "Dzikir Pagi",
-                      style: TextStyle(fontSize: 30, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      "Sesuai Sunnah",
-                      style: TextStyle(fontSize: 15, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
+                      Text(
+                        "Dzikir Pagi",
+                        style: TextStyle(fontSize: 30, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        "Sesuai Sunnah",
+                        style: TextStyle(fontSize: 15, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(20),
-                height: 234,
-                width: 234,
-                decoration: BoxDecoration(
-                    color: Colors.grey[800],
-                    borderRadius: BorderRadius.circular(30)),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 90,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/moonlight.png'),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ListZikirPetang();
+                  }));
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  height: 234,
+                  width: 234,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[800],
+                      borderRadius: BorderRadius.circular(30)),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 90,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/moonlight.png'),
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      "Dzikir Petang",
-                      style: TextStyle(fontSize: 30, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      "Sesuai Sunnah",
-                      style: TextStyle(fontSize: 15, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
+                      Text(
+                        "Dzikir Petang",
+                        style: TextStyle(fontSize: 30, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        "Sesuai Sunnah",
+                        style: TextStyle(fontSize: 15, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
