@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quran_app/page/detailQuran.dart';
-import 'package:quran_app/model/alquran.dart';
+import 'package:quran_app/model/bukhari.dart';
 
-class ListHadits extends StatelessWidget {
+class ListHadist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,8 +51,16 @@ class ListHadits extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: 192,
                   itemBuilder: (context, index) {
-                    final AlQuran quran = dataAlQuran[index];
+                    // final AlQuran quran = dataAlQuran[index];
+                    final Bukhari hadits = dataHadits[index];
+                    var angka = hadits.number.toString();
                     return InkWell(
+                      // onTap: () {
+                      //   Navigator.push(context,
+                      //       MaterialPageRoute(builder: (context) {
+                      //     return DetailQuran(quran: quran);
+                      //   }));
+                      // },
                       child: Card(
                         child: Container(
                           height: 90,
@@ -61,44 +68,19 @@ class ListHadits extends StatelessWidget {
                             children: [
                               Container(
                                   margin: EdgeInsets.fromLTRB(30, 0, 40, 0),
-                                  child: Text(quran.id.toString())),
+                                  child: Text(hadits.number.toString())),
                               Container(
                                 margin: EdgeInsets.only(top: 19),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      quran.surat_name,
+                                      "hadits $angka",
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Row(
-                                      children: [
-                                        Text(
-                                          quran.surat_terjemahan,
-                                          style: TextStyle(
-                                              color: Colors.grey[700]),
-                                        ),
-                                        Text(
-                                          ",",
-                                          style: TextStyle(
-                                              color: Colors.grey[700]),
-                                        ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        Text(quran.count_ayat.toString(),
-                                            style: TextStyle(
-                                                color: Colors.grey[700])),
-                                        SizedBox(
-                                          width: 6,
-                                        ),
-                                        Text("ayat",
-                                            style: TextStyle(
-                                                color: Colors.grey[700]))
-                                      ],
-                                    )
+                                   
                                   ],
                                 ),
                               ),
