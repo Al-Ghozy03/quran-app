@@ -36,7 +36,7 @@ class HeaderQuran extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(0, 160, 0, 0),
                       child: Center(
                         child: Text(
-                          "Daftar",
+                          "Daftar Surat",
                           style: TextStyle(
                               fontSize: 40,
                               color: Colors.white,
