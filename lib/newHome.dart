@@ -107,11 +107,7 @@ class NewHome extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return ListHadist();
-                    }));
-                  },
+
                   child: Container(
                     padding: EdgeInsets.all(20),
                     height: 234,
