@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quran_app/ngetes.dart';
+import 'package:quran_app/page/detailQuran.dart';
 import 'package:quran_app/page/listHadist.dart';
 import 'package:quran_app/page/listQuran.dart';
 import 'package:quran_app/page/DetailPage.dart';

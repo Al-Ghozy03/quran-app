@@ -3,6 +3,7 @@ import 'package:quran_app/model/alquran.dart';
 
 class DetailQuran extends StatelessWidget {
   final AlQuran quran;
+  // String nama = quran.surat_name;
   DetailQuran({required this.quran});
   @override
   Widget build(BuildContext context) {
@@ -59,23 +60,17 @@ class DetailQuran extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          quran.count_ayat.toString(),
+                          quran.surat_terjemahan,
                           style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                         SizedBox(
                           width: 5,
                         ),
+                        Text(quran.count_ayat.toString()),
                         Text(
                           "Ayat,",
                           style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          quran.surat_terjemahan,
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        )
                       ],
                     ),
                   )

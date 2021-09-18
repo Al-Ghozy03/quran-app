@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/model/bukhari.dart';
+import 'package:quran_app/page/detailHadist.dart';
 
 class ListHadist extends StatelessWidget {
   @override
@@ -35,7 +36,7 @@ class ListHadist extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(0, 160, 0, 0),
                       child: Center(
                         child: Text(
-                          "Daftar Surat",
+                          "Daftar Hadist",
                           style: TextStyle(
                               fontSize: 40,
                               color: Colors.white,
@@ -49,18 +50,18 @@ class ListHadist extends StatelessWidget {
               Container(
                 height: 800,
                 child: ListView.builder(
-                  itemCount: 192,
+                  itemCount: 15,
                   itemBuilder: (context, index) {
                     // final AlQuran quran = dataAlQuran[index];
-                    final Bukhari hadits = dataHadits[index];
-                    var angka = hadits.number.toString();
+                    final Bukhari hadist = dataHadist[index];
+                    var angka = hadist.number.toString();
                     return InkWell(
-                      // onTap: () {
-                      //   Navigator.push(context,
-                      //       MaterialPageRoute(builder: (context) {
-                      //     return DetailQuran(quran: quran);
-                      //   }));
-                      // },
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return DetailHadist(hadist: hadist);
+                        }));
+                      },
                       child: Card(
                         child: Container(
                           height: 90,
@@ -68,19 +69,18 @@ class ListHadist extends StatelessWidget {
                             children: [
                               Container(
                                   margin: EdgeInsets.fromLTRB(30, 0, 40, 0),
-                                  child: Text(hadits.number.toString())),
+                                  child: Text(hadist.number.toString())),
                               Container(
                                 margin: EdgeInsets.only(top: 19),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "hadits $angka",
+                                      "hadist $angka",
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                   
                                   ],
                                 ),
                               ),
