@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/model/bukhari.dart';
+import 'package:quran_app/page/DetailHadist.dart';
 
 class ListHadist extends StatelessWidget {
   @override
@@ -55,12 +56,12 @@ class ListHadist extends StatelessWidget {
                     final Bukhari hadits = dataHadits[index];
                     var angka = hadits.number.toString();
                     return InkWell(
-                      // onTap: () {
-                      //   Navigator.push(context,
-                      //       MaterialPageRoute(builder: (context) {
-                      //     return DetailQuran(quran: quran);
-                      //   }));
-                      // },
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return DetailHadist(hadist: hadist);
+                        }));
+                      },
                       child: Card(
                         child: Container(
                           height: 90,
