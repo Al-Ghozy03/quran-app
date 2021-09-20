@@ -50,14 +50,16 @@ class HeaderQuran extends StatelessWidget {
               Container(
                 height: 800,
                 child: ListView.builder(
-                  itemCount: 192,
+                  itemCount: 114,
                   itemBuilder: (context, index) {
                     final AlQuran quran = dataAlQuran[index];
                     return InkWell(
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return DetailQuran(quran: quran);
+                          return DetailQuran(
+                            quran: quran,
+                          );
                         }));
                       },
                       child: Card(
