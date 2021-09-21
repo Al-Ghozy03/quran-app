@@ -3,8 +3,8 @@ import 'package:intl/intl.dart';
 import 'package:quran_app/halaman.dart';
 import 'package:quran_app/page/listQuran.dart';
 import 'package:quran_app/page/listHadist.dart';
-import 'package:quran_app/page/listZikirPagi.dart';
-import 'package:quran_app/page/listZikirPetang.dart';
+import 'package:quran_app/page/detailZikirPagi.dart';
+import 'package:quran_app/page/detailZikirPetang.dart';
 
 class NewHome extends StatelessWidget {
   @override
@@ -67,7 +67,8 @@ class NewHome extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
                       return HeaderQuran();
                     }));
                   },
@@ -107,7 +108,12 @@ class NewHome extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return ListHadist();
+                    }));
+                  },
                   child: Container(
                     padding: EdgeInsets.all(20),
                     height: 234,
@@ -153,8 +159,9 @@ class NewHome extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return ListZikirPagi();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return DetailZikirPagi();
                     }));
                   },
                   child: Container(
@@ -190,8 +197,9 @@ class NewHome extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return ListZikirPetang();
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return DetailZikirPetang();
                     }));
                   },
                   child: Container(

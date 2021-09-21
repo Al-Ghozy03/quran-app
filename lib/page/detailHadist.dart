@@ -8,8 +8,13 @@ class DetailHadist extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Row(
-          children: [Text("data")],
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: [
+            Row(
+              children: [Text(hadist.arab.toString())],
+            ),
+          ],
         ),
       ),
     );

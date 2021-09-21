@@ -3,7 +3,6 @@ import 'package:quran_app/ngetes.dart';
 import 'package:quran_app/page/detailQuran.dart';
 import 'package:quran_app/page/listHadist.dart';
 import 'package:quran_app/page/listQuran.dart';
-import 'package:quran_app/page/DetailPage.dart';
 import 'package:quran_app/newHome.dart';
 
 void main() => runApp(MyHomePage());
@@ -16,7 +15,7 @@ class MyHomePage extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "Quran App",
         home: Scaffold(
-          body: ListHadist(),
+          body: NewHome(),
         ));
   }
 }
