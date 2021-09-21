@@ -53,7 +53,7 @@ class ListHadist extends StatelessWidget {
                   itemCount: 15,
                   itemBuilder: (context, index) {
                     // final AlQuran quran = dataAlQuran[index];
-                    final Bukhari hadist = dataHadist[index];
+                    final Hadist hadist = dataHadist[index];
                     var angka = hadist.number.toString();
                     return InkWell(
                       onTap: () {
