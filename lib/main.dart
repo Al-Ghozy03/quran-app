@@ -4,6 +4,7 @@ import 'package:quran_app/page/detailQuran.dart';
 import 'package:quran_app/page/listHadist.dart';
 import 'package:quran_app/page/listQuran.dart';
 import 'package:quran_app/newHome.dart';
+import 'package:quran_app/splash_screen.dart';
 
 void main() => runApp(MyHomePage());
 
@@ -14,9 +15,8 @@ class MyHomePage extends StatelessWidget {
         theme: ThemeData(fontFamily: "poppins"),
         debugShowCheckedModeBanner: false,
         title: "Quran App",
-        home: Scaffold(
-          body: NewHome(),
-        ));
+        home: SplashScreenView(),
+        );
   }
 }
 
