@@ -27,7 +27,7 @@ class ListHadist extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(50, 70, 50, 30),
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('assets/alam.jpg'),
+                              image: AssetImage('assets/gunung.png'),
                               fit: BoxFit.fill),
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(40)),
@@ -70,19 +70,10 @@ class ListHadist extends StatelessWidget {
                               Container(
                                   margin: EdgeInsets.fromLTRB(30, 0, 40, 0),
                                   child: Text(hadist.number.toString())),
-                              Container(
-                                margin: EdgeInsets.only(top: 19),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "hadist $angka",
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
+                              Text(
+                                "hadist $angka",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
                               ),
                             ],
                           ),
