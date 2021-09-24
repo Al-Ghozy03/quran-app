@@ -60,7 +60,7 @@ var dataZikirPagi = [
         'Meminta pada Allah kebaikan di hari ini dan kebaikan sesudahnya, juga agar terhindar dari kejelekan di hari ini dan kejelekan sesudahnya. Di dalamnya berisi pula permintaan agar terhindar dari rasa malas padahal mampu untuk beramal, juga agar terhindar dari kejelekan di masa tua. Di dalamnya juga berisi permintaan agar terselamatkan dari siksa kubur dan siksa neraka yang merupakan siksa terberat di hari kiamat kelak. [HR. Muslim no. 2723. Lihat keterangan Syarh Hisnul Muslim, hal. 161]',
     narrator: '',
     note: 'Dibaca 1x',
-    title: 'Meminta kebaikan untuk hari Ini',
+    title: 'Meminta kebaikan\nuntuk hari Ini',
     translated_id:
         'Kami telah memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji bagi Allah. Tidak ada ilah (yang berhak disembah) kecuali Allah semata, tiada sekutu bagi-Nya. Milik Allah kerajaan dan bagi-Nya pujian. Dia-lah Yang Mahakuasa atas segala sesuatu. Wahai Rabbku, aku mohon kepada-Mu kebaikan di hari ini dan kebaikan sesudahnya. Aku berlindung kepada-Mu dari kejahatan hari ini dan kejahatan sesudahnya. Wahai Rabbku, aku berlindung kepada-Mu dari kemalasan dan kejelekan di hari tua. Wahai Rabbku, aku berlindung kepada-Mu dari siksaan di neraka dan siksaan di alam kubur.',
     time: 'pagi',
@@ -75,7 +75,7 @@ var dataZikirPagi = [
     narrator:
         'HR. Tirmidzi no. 3391 dan Abu Daud no. 5068. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini shahih.',
     note: 'Dibaca 1x',
-    title: 'Do’a ketika memasuki waktu pagi',
+    title: 'Do’a ketika memasuki\nwaktu pagi',
     translated_id:
         'Ya Allah, dengan rahmat dan pertolongan-Mu kami memasuki waktu pagi, dan dengan rahmat dan pertolongan-Mu kami memasuki waktu petang. Dengan rahmat dan pertolongan-Mu kami hidup dan dengan kehendak-Mu kami mati. Dan kepada-Mu kebangkitan (bagi semua makhluk).',
     time: 'pagi',
@@ -105,7 +105,7 @@ var dataZikirPagi = [
         'Barangsiapa yang mengucapkan dzikir ini ketika pagi dan petang hari sebanyak empat kali, maka Allah akan membebaskan dirinya dari siksa neraka. [HR. Abu Daud no. 5069. Al Hafizh Abu Thohir mengatakan bahwa hadits ini hasan]',
     narrator: '',
     note: 'Dibaca 4x',
-    title: 'Mentauhidkan Allah Subhana wa Ta’ala di waktu pagi',
+    title: 'Mentauhidkan Allah\nSubhana wa Ta’ala di waktu pagi',
     translated_id:
         'Ya Allah, sesungguhnya aku di waktu pagi ini mempersaksikan Engkau, malaikat yang memikul ‘Arys-Mu, malaikat-malaikat dan seluruh makhluk-Mu, bahwa sesungguhnya Engkau adalah Allah, tiada ilah yang berhak disembah kecuali Engkau semata, tiada sekutu bagi-Mu dan sesungguhnya Muhammad adalah hamba dan utusan-Mu.',
     time: 'pagi',
@@ -120,7 +120,7 @@ var dataZikirPagi = [
         'Rasulullah shallallahu ‘alaihi wa sallam tidaklah pernah meninggalkan do’a ini di pagi dan petang hari. Di dalamnya berisi perlindungan dan keselamatan pada agama, dunia, keluarga dan harta dari berbagai macam gangguan yang datang dari berbagai arah. [HR. Abu Daud no. 5074 dan Ibnu Majah no. 3871. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini shahih]',
     narrator: '',
     note: 'Dibaca 1x',
-    title: 'Memohon keselamatan dunia dan akhirat',
+    title: 'Memohon keselamatan\ndunia dan akhirat',
     translated_id:
         'Ya Allah, sesungguhnya aku memohon kebajikan dan keselamatan di dunia dan akhirat. Ya Allah, sesungguhnya aku memohon kebajikan dan keselamatan dalam agama, dunia, keluarga dan hartaku. Ya Allah, tutupilah auratku (aib dan sesuatu yang tidak layak dilihat orang) dan tenteramkanlah aku dari rasa takut. Ya Allah, peliharalah aku dari muka, belakang, kanan, kiri dan atasku. Aku berlindung dengan kebesaran-Mu, agar aku tidak disambar dari bawahku (oleh ular atau tenggelam dalam bumi dan lain-lain yang membuat aku jatuh).',
     time: '',
@@ -135,7 +135,7 @@ var dataZikirPagi = [
         'Do’a ini diajarkan oleh Rasulullah shallallahu ‘alaihi wa sallam pada Abu Bakr Ash Shiddiq radhiyallahu ‘anhu untuk dibaca pada pagi, petang dan saat beranjak tidur. [HR. Tirmidzi no. 3392 dan Abu Daud no. 5067. Al Hafizh Abu Thohir mengatakan bahawa sanad hadits ini shahih. Adapun kalimat terakhir (وَأَنْ أَقْتَرِفَ عَلَى نَفْسِيْ سُوْءًا أَوْ أَجُرُّهُ إِلَى مُسْلِمٍ) adalah tambahan dari riwayat Ahmad 2: 196. Dikomentari oleh Syaikh Syu’aib Al Arnauth bahwa hadits tersebut shahih dilihat dari jalur lainnya (shahih lighoirihi)]',
     narrator: '',
     note: 'Dibaca 1x',
-    title: "Do'a pagi, petang dan saat beranjak tidur",
+    title: "Do'a pagi, petang dan\nsaat beranjak tidur",
     translated_id:
         'Ya Allah, Yang Maha Mengetahui yang ghaib dan yang nyata, wahai Rabb pencipta langit dan bumi, Rabb segala sesuatu dan yang merajainya. Aku bersaksi bahwa tidak ada ilah yang berhak disembah kecuali Engkau. Aku berlindung kepadaMu dari kejahatan diriku, setan dan balatentaranya (godaan untuk berbuat syirik pada Allah), dan aku (berlindung kepada-Mu) dari berbuat kejelekan terhadap diriku atau menyeretnya kepada seorang muslim.',
     time: '',
@@ -150,7 +150,7 @@ var dataZikirPagi = [
         'Barangsiapa yang mengucapkan dzikir tersebut sebanyak tiga kali di pagi hari dan tiga kali di petang hari, maka tidak akan ada bahaya yang tiba-tiba memudaratkannya. [HR. Abu Daud no. 5088, 5089, Tirmidzi no. 3388, dan Ibnu Majah no. 3869. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini hasan.]',
     narrator: '',
     note: 'Dibaca 3x',
-    title: "Do'a terhindar dari bahaya yang tiba-tiba",
+    title: "Do'a terhindar dari bahaya\nyang tiba-tiba",
     translated_id:
         'Dengan nama Allah yang bila disebut, segala sesuatu di bumi dan langit tidak akan berbahaya, Dia-lah Yang Maha Mendengar lagi Maha Mengetahui.',
     time: '',
@@ -180,7 +180,7 @@ var dataZikirPagi = [
         'Dzikir ini diajarkan oleh Nabi shallallahu ‘alaihi wa sallam pada Fathimah supaya diamalkan pagi dan petang. [HR. Ibnu As Sunni dalam ‘Amalul Yaum wal Lailah no. 46, An Nasai dalam Al Kubro (381/ 570), Al Bazzar dalam musnadnya (4/ 25/ 3107), Al Hakim (1: 545). Sanad hadits ini hasan sebagaimana dikatakan oleh Syaikh Al Albani dalam As Silsilah Ash Shahihah no. 227]',
     narrator: '',
     note: 'Dibaca 1x',
-    title: "Do'a meminta dilancarkan urusan",
+    title: "Do'a meminta\ndilancarkan urusan",
     translated_id:
         'Wahai Rabb Yang Maha Hidup, wahai Rabb Yang Berdiri Sendiri (tidak butuh segala sesuatu), dengan rahmat-Mu aku minta pertolongan, perbaikilah segala urusanku dan jangan diserahkan kepadaku sekali pun sekejap mata (tanpa mendapat pertolongan dariMu).',
     time: '',
@@ -208,7 +208,7 @@ var dataZikirPagi = [
         'Barangsiapa yang mengucapkan kalimat ‘subhanallahi wa bi hamdih’ di pagi dan petang hari sebanyak 100x, maka tidak ada yang datang pada hari kiamat yang lebih baik dari yang ia lakukan kecuali orang yang mengucapkan semisal atau lebih dari itu. [HR. Muslim no. 2692]',
     narrator: '',
     note: 'Dibaca 100x',
-    title: 'Dzikir Ringan Namun Berat di Timbangan',
+    title: 'Dzikir Ringan Namun\nBerat di Timbangan',
     translated_id: 'Maha suci Allah, aku memuji-Nya.',
     time: '',
   ),
@@ -219,7 +219,7 @@ var dataZikirPagi = [
     arabic_latin:
         'Laa ilaha illallah wahdahu laa syarika lah, lahul mulku walahul hamdu wa huwa ‘ala kulli syai-in qodiir.',
     faedah:
-        '<b>Faedah jika dibaca 1 atau 10 kali</b>\nBarangsiapa yang membaca dzikir tersebut di pagi hari sebanyak sepuluh kali, Allah akan mencatatkan baginya 10 kebaikan, menghapuskan baginya 10 kesalahan, ia juga mendapatkan kebaikan semisal memerdekakan 10 budak, Allah akan melindunginya dari gangguan setan hingg petang hari. Siapa yang mengucapkannya di petang hari, ia akan mendapatkan keutamaan semisal itu pula. [HR. An Nasai Al Kubra 6:10]\n<br />\n<b>Faedah jika dibaca 100 kali dalam sehari</b>Barangsiapa yang mengucapkan dzikir tersebut dalam sehari sebanyak seratus kali, maka itu seperti membebaskan 10 orang budak, dicatat baginya 100 kebaikan, dihapus baginya 100 kesalahan, dirinya akan terjaga dari gangguan setan dari pagi hingga petang hari, dan tidak ada seorang pun yang lebih baik dari yang ia lakukan kecuali oleh orang yang mengamalkan lebih dari itu. [HR. Bukhari no. 3293 dan Muslim no. 2691]',
+        'Faedah jika dibaca 1 atau 10 kali\nBarangsiapa yang membaca dzikir tersebut di pagi hari sebanyak sepuluh kali, Allah akan mencatatkan baginya 10 kebaikan, menghapuskan baginya 10 kesalahan, ia juga mendapatkan kebaikan semisal memerdekakan 10 budak, Allah akan melindunginya dari gangguan setan hingg petang hari. Siapa yang mengucapkannya di petang hari, ia akan mendapatkan keutamaan semisal itu pula. [HR. An Nasai Al Kubra 6:10]\n<br />\nFaedah jika dibaca 100 kali dalam sehariBarangsiapa yang mengucapkan dzikir tersebut dalam sehari sebanyak seratus kali, maka itu seperti membebaskan 10 orang budak, dicatat baginya 100 kebaikan, dihapus baginya 100 kesalahan, dirinya akan terjaga dari gangguan setan dari pagi hingga petang hari, dan tidak ada seorang pun yang lebih baik dari yang ia lakukan kecuali oleh orang yang mengamalkan lebih dari itu. [HR. Bukhari no. 3293 dan Muslim no. 2691]',
     narrator: '',
     note: 'Dibaca 10x',
     title: 'Bertauhid',
@@ -237,7 +237,7 @@ var dataZikirPagi = [
         'Nabi shallallahu ‘alaihi wa sallam mengatakan pada Juwairiyah bahwa dzikir di atas telah mengalahkan dzikir yang dibaca oleh Juwairiyah dari selepas Shubuh sampai waktu Dhuha. [HR. Muslim no. 2726]',
     narrator: '',
     note: 'Dibaca 3x',
-    title: "Memuji-muji Allah Subhana wa Ta'ala",
+    title: "Memuji-muji Allah\nSubhana wa Ta'ala",
     translated_id:
         'Maha Suci Allah, aku memujiNya sebanyak makhluk-Nya, sejauh kerelaan-Nya, seberat timbangan ‘Arsy-Nya dan sebanyak tinta tulisan kalimat-Nya.',
     time: 'pagi',

@@ -27,7 +27,7 @@ class ListHadist extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(50, 70, 50, 30),
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('assets/gunung.png'),
+                              image: AssetImage('assets/alam.jpg'),
                               fit: BoxFit.fill),
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(40)),

@@ -39,38 +39,74 @@ class DetailZikirPagi extends StatelessWidget {
                             width: MediaQuery.of(context).size.width,
                             child: Column(
                               children: [
-                                Container(
-                                    padding: EdgeInsets.all(20),
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          margin: EdgeInsets.only(bottom: 10),
-                                          child: Center(
-                                            child: Text(
-                                              zikir[index].title.toString(),
-                                              style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 25),
-                                              textAlign: TextAlign.center,
-                                            ),
+                                Center(
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        height: 250,
+                                        margin:
+                                            EdgeInsets.fromLTRB(50, 80, 50, 30),
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                                image:
+                                                    AssetImage('assets/ss.png'),
+                                                fit: BoxFit.fill),
+                                            color: Colors.blue,
+                                            borderRadius:
+                                                BorderRadius.circular(40)),
+                                      ),
+                                      Container(
+                                        margin:
+                                            EdgeInsets.fromLTRB(0, 160, 0, 0),
+                                        child: Center(
+                                          child: Text(
+                                            zikir[index].title.toString(),
+                                            style: TextStyle(
+                                                fontSize: 27,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold),
+                                            textAlign: TextAlign.center,
                                           ),
                                         ),
-                                        Row(
+                                      ),
+                                      Container(
+                                        margin:
+                                            EdgeInsets.fromLTRB(0, 280, 0, 0),
+                                        child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
                                             Container(
                                               child: Text(
-                                                  zikir[index].id.toString()),
+                                                zikir[index].id.toString(),
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                             Container(
-                                              child: Text("/"),
+                                              child: Text(
+                                                "/",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                             Container(
-                                              child: Text("17"),
+                                              child: Text(
+                                                "17",
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                           ],
                                         ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                    padding: EdgeInsets.all(20),
+                                    child: Column(
+                                      children: [
                                         Container(
                                           child: Text(
                                             zikir[index].arabic.toString(),

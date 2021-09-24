@@ -113,6 +113,7 @@ class _DetailQuranState extends State<DetailQuran> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Container(
+                                margin: EdgeInsets.symmetric(vertical: 20),
                                 child: Text(
                                   widget.quran.ayat[i].translation_aya_text,
                                   style: TextStyle(fontSize: 17),

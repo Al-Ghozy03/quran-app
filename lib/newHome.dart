@@ -87,7 +87,7 @@ class NewHome extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(50, 80, 50, 30),
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('assets/camel.jpg'),
+                                image: AssetImage('assets/ss.png'),
                                 fit: BoxFit.fill),
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(40)),
@@ -105,7 +105,7 @@ class NewHome extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // margin: EdgeInsets.fromLTRB(475, 280, 0, 0),
+                        margin: EdgeInsets.fromLTRB(475, 280, 0, 0),
                         child: Text(
                           DateFormat.Hm().format(DateTime.now()),
                           style: TextStyle(color: Colors.white, fontSize: 16),
@@ -119,7 +119,7 @@ class NewHome extends StatelessWidget {
                   style: TextStyle(fontSize: 20),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -133,15 +133,15 @@ class NewHome extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(20),
-                        height: 200,
-                        width: 200,
+                        height: 250,
+                        width: 250,
                         decoration: BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.yellow[200],
                             borderRadius: BorderRadius.circular(30)),
                         child: Column(
                           children: [
                             Container(
-                              height: 90,
+                              height: 110,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/quran.png'),
@@ -175,33 +175,31 @@ class NewHome extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(20),
-                        height: 200,
-                        width: 200,
+                        height: 250,
+                        width: 250,
                         decoration: BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.green,
                             borderRadius: BorderRadius.circular(30)),
                         child: Column(
                           children: [
                             Container(
-                              height: 90,
+                              height: 110,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image: AssetImage('assets/muhammad.png'),
+                                  image: AssetImage('assets/islam.png'),
                                 ),
                               ),
                             ),
                             Text(
                               "Hadist",
-                              style: TextStyle(
-                                fontSize: 30,
-                              ),
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
                               textAlign: TextAlign.center,
                             ),
                             Text(
                               "Dari imam terkenal",
-                              style: TextStyle(
-                                fontSize: 15,
-                              ),
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.white),
                               textAlign: TextAlign.center,
                             ),
                           ],
@@ -211,7 +209,7 @@ class NewHome extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 35,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -225,15 +223,15 @@ class NewHome extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(20),
-                        height:200,
-                        width:200,
+                        height: 250,
+                        width: 250,
                         decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.blue[600],
                             borderRadius: BorderRadius.circular(30)),
                         child: Column(
                           children: [
                             Container(
-                              height: 90,
+                              height: 110,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/matahari.png'),
@@ -265,15 +263,15 @@ class NewHome extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.all(20),
-                        height:200,
-                        width:200,
+                        height: 250,
+                        width: 250,
                         decoration: BoxDecoration(
-                            color: Colors.grey[800],
+                            color: Colors.purple[100],
                             borderRadius: BorderRadius.circular(30)),
                         child: Column(
                           children: [
                             Container(
-                              height: 90,
+                              height: 110,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/moonlight.png'),
@@ -282,14 +280,16 @@ class NewHome extends StatelessWidget {
                             ),
                             Text(
                               "Dzikir Petang",
-                              style:
-                                  TextStyle(fontSize: 25, color: Colors.white),
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
                               textAlign: TextAlign.center,
                             ),
                             Text(
                               "Sesuai Sunnah",
-                              style:
-                                  TextStyle(fontSize: 15, color: Colors.white),
+                              style: TextStyle(
+                                fontSize: 15,
+                              ),
                               textAlign: TextAlign.center,
                             ),
                           ],

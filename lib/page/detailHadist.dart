@@ -40,7 +40,7 @@ class DetailHadist extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(50, 80, 50, 30),
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('assets/padang.png'),
+                                image: AssetImage('assets/ss.png'),
                                 fit: BoxFit.fill),
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(40)),
